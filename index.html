@@ -1,0 +1,23 @@
+<!-- index.html -->
+<link rel="stylesheet" href="style.css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Thoughts Form</title>
+</head>
+<body>
+    <h1>Secret Thoughts Form</h1>
+    <form action="/submit" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="thought">Your Secret Thought:</label>
+        <textarea id="thought" name="thought" rows="4" required></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="thoughtsContainer"></div>
+    <script src="/script.js"></script>
+</body>
+</html>
